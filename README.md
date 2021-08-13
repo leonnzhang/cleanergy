@@ -1,1 +1,1 @@
-Program to calculate trends in weather
+Program to calculate cost/effectiveness of different types of energy
