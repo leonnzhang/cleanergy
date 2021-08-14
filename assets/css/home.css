@@ -63,9 +63,7 @@
 }
 .start {
     width: 100%;
-    height: 80vh;
-    display: flex;
-    flex-direction: row;
+    height: 100vh;
     background-color: #f5f6f7;
 }
 
@@ -128,6 +126,7 @@
 
 h1 {
     margin: auto;
+    margin-top: 5% !important;
     width: 90%;
     max-width: 527px;
     border: 3px solid green;
@@ -163,22 +162,17 @@ table {
     border-spacing: 15px;
 }
 
-html {
-    min-height: 100%;
-}
-
-.center {
+.prod-table {
     margin-left: auto;
     margin-right: auto;
 }
-
+/*
 body {
     background-color:  #91f2bb;
     background-image: linear-gradient(#91f2bb, #18b25b)
+}*/
 
-}
-
-img {
+.e-prod {
     width: 90%;
     height: auto;
 }
