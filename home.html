@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/home.css">
+    <script src="https://scheduler.distributed.computer/dcp-client/dcp-client.js"></script>
+    <script src="./assets/scripts/dcp.js"></script>
+    <script src="./assets/scripts/dom.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <div class="navbar">
@@ -21,55 +27,123 @@
     <div class="landing" id="landing">
         <span class="header">Welcome to Energy Production.</span>
         <span class="subheader">Revolutionalizing a bunch of stuff</span>
-        <a class="qs" href="#start">Get Started</a>
+        <a class="qs" id="temp" href="#start">Get Started</a>
     </div>
     <div class="about" id="about">
         <div class="about-grid">
-            <div class="about-card">
+            <div data-aos="flip-up" class="about-card">
                 <span class="about-head">Inspiration</span>
                 <span class="about-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at semper dui, vitae tristique eros. In vitae nibh rutrum, consequat lacus vitae, mattis velit. Aliquam sapien felis, viverra in viverra eget, sagittis a odio. Phasellus sagittis congue eleifend. Integer ac arcu efficitur tortor ultrices efficitur sed sit amet enim.
+                    We wanted to create an interactive and fun tool that allows people to see the difference between energy sources and experiment with changing various numbers to see the impact that will make on the final result. We also want to display the final result in a simple and visual way, so that an average user with no background knowledge could still see and understand the difference clearly.
                 </span>
             </div>
 
-            <div class="about-card">
+            <div data-aos="flip-up" class="about-card">
                 <span class="about-head">What it does</span>
                 <span class="about-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at semper dui, vitae tristique eros. In vitae nibh rutrum, consequat lacus vitae, mattis velit. Aliquam sapien felis, viverra in viverra eget, sagittis a odio. Phasellus sagittis congue eleifend. Integer ac arcu efficitur tortor ultrices efficitur sed sit amet enim.
+                    Once you press "get started" or scroll down, you will see our energy sources calculator. There, pick any energy source and enter your custom values to see how much that will cost, how much energy it generates, and the carbon emissions if applicable. We will also compare the cost, output and emissions to many real-world examples and provide an optimal energy source for your situation.
                 </span>
             </div>
 
-            <div class="about-card">
+            <div data-aos="flip-up" class="about-card">
                 <span class="about-head">How we built it</span>
                 <span class="about-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at semper dui, vitae tristique eros. In vitae nibh rutrum, consequat lacus vitae, mattis velit. Aliquam sapien felis, viverra in viverra eget, sagittis a odio. Phasellus sagittis congue eleifend. Integer ac arcu efficitur tortor ultrices efficitur sed sit amet enim.
                 </span>
             </div>
 
-            <div class="about-card">
+            <div data-aos="flip-up" class="about-card">
                 <span class="about-head">Challenges we ran into</span>
                 <span class="about-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at semper dui, vitae tristique eros. In vitae nibh rutrum, consequat lacus vitae, mattis velit. Aliquam sapien felis, viverra in viverra eget, sagittis a odio. Phasellus sagittis congue eleifend. Integer ac arcu efficitur tortor ultrices efficitur sed sit amet enim.
+                    During the process of creating this, we ran into issues with finding reliable data that is easy to work within code. We found various APIs regarding weather and energy, but they all turned out to be paid, too limited or too complex and unfeasible to implement in our timeframe. Eventually, we settled by researching the calculations for different energy sources and simplifying them to only a few inputs and outputs so that any user with no expertise in the field could use and understand our project.
                 </span>
             </div>
 
-            <div class="about-card">
+            <div data-aos="flip-up" class="about-card">
                 <span class="about-head">Accomplishments that we're proud of</span>
                 <span class="about-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at semper dui, vitae tristique eros. In vitae nibh rutrum, consequat lacus vitae, mattis velit. Aliquam sapien felis, viverra in viverra eget, sagittis a odio. Phasellus sagittis congue eleifend. Integer ac arcu efficitur tortor ultrices efficitur sed sit amet enim.
                 </span>
             </div>
 
-            <div class="about-card">
+            <div data-aos="flip-up" class="about-card">
                 <span class="about-head">What's next for Energy Production</span>
                 <span class="about-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at semper dui, vitae tristique eros. In vitae nibh rutrum, consequat lacus vitae, mattis velit. Aliquam sapien felis, viverra in viverra eget, sagittis a odio. Phasellus sagittis congue eleifend. Integer ac arcu efficitur tortor ultrices efficitur sed sit amet enim.
+                    Our goal for this project is to show average people with little knowledge on the subject how much of a difference clean energy can make. Hopefully, this will inspire them with enough interest to do further research on clean energy sources. By making people more aware of the problems regarding fossil fuels, there can be more people willing to make a difference by contributing to the development, distribution and implementation of clean energy.
                 </span>
             </div>
         </div>
     </div>
     <div class="start" id="start">
 
+        <div class="container">
+            <span class="start-header">Energy Production Calculator</span>
+            <div class="start-grid">
+
+                <div data-aos="flip-left" class="start-card" >
+                    <img class="start-image" src="./assets/images/coal.png" alt="">
+                    <div class="start-text">
+                        <span class="start-name">Coal</span>
+                        <span class="start-description">
+                            Coal is a solid fossil fuel formed by plant matter decomposing under the proper conditions, which can be burnt for electrical energy.
+                        </span>
+                    </div>
+                </div>
+
+                <div data-aos="flip-left" class="start-card" >
+                    <img class="start-image" src="./assets/images/oil.png" alt="">
+                    <div class="start-text">
+                        <span class="start-name">Oil</span>
+                        <span class="start-description">
+                            Oil is a liquid fossil fuel formed by tiny organic matter decomposing under the proper conditions, which can be burnt for electrical energy.
+                        </span>
+                    </div>
+                </div>
+
+                <div data-aos="flip-left" class="start-card" >
+                    <img class="start-image" src="./assets/images/gas.png" alt="">
+                    <div class="start-text">
+                        <span class="start-name">Gas</span>
+                        <span class="start-description">
+                            Natural gas is a solid fossil fuel formed by microscopic organic matter decomposing under the proper conditions, which can be burnt for electrical energy.
+                        </span>
+                    </div>
+                </div>
+
+                <div data-aos="flip-left" class="start-card" >
+                    <img class="start-image" src="./assets/images/sun.png" alt="">
+                    <div class="start-text">
+                        <span class="start-name">Solar</span>
+                        <span class="start-description">
+                            Solar energy is created by using photovoltaic cells in solar panels to convert direct sunlight to electrical energy.
+                        </span>
+                    </div>
+                </div>
+
+                <div data-aos="flip-left" class="start-card" >
+                    <img class="start-image" src="./assets/images/wind.png" alt="">
+                    <div class="start-text">
+                        <span class="start-name">Wind</span>
+                        <span class="start-description">
+                            Large turbines are installed in windy locations which spin and turn a generator which generates electrical energy.
+                        </span>
+                    </div>
+                </div>
+
+                <div data-aos="flip-left" class="start-card" >
+                    <img class="start-image" src="./assets/images/hydro.png" alt="">
+                    <div class="start-text">
+                        <span class="start-name">Hydro</span>
+                        <span class="start-description">
+                            Turbines are installed in areas with waterflow like dams or rivers that spin and turn a generator to create electrical energy.
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+<!--
         <h1>
             Energy Production Calculator
         </h1>
@@ -127,7 +201,7 @@
                     </td>
                 </tr>
             </table>
-        </div>
+        </div>-->
     </div>
 
     <div class="footer">
@@ -143,5 +217,9 @@
             </a>
         </div>
     </div>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

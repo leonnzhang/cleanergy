@@ -1,11 +1,14 @@
 const compute = dcp.compute;
 
 // broken event listener bc no go button
+/* DONT USE ONLOAD HERE THERE IS AN ONLOAD IN DOM.JS!! NEVERMIND NOT YET
 window.onload = () => {
-    document.getElementById('go').onclick = () => {
+    document.getElementById('temp').onclick = () => {
         worker();
     }
-}
+}*/
+
+let inputString = "we are going to lose sethacks woohoo"
 
 function upperCaseFunction(letter) {
     progress();
@@ -19,11 +22,12 @@ function workFunction() {
 
 async function worker() {
     let inputSet = Array.from(inputString);
-    let job = compute.for(inputSet, workFunction);
+    let job = compute.for(inputSet, upperCaseFunction);
+    job.public.name = "SETHACKS";
 
     job.computeGroups = [
         {
-            joinKey: 'sethacks',
+            joinKey: 'insight',
             joinSecret: 'dcp'
         }
     ]
