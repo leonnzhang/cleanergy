@@ -1,23 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
 h1 {
     margin: auto;
-    width: 50%;
+    width: 90%;
+    max-width: 527px;
     border: 3px solid green;
     padding: 10px;
     text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 12px;
 }
-
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: #2196F3;
-    padding: 10px;
-}
-
-.grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
+th, td {
+    border-radius: 12px;
+    font-size: 3vw;
     text-align: center;
+    vertical-align: bottom;
+    border: 2.4px solid black;
+    max-width: 150px;
+    width: 30%;
+    font-family: 'Lato', sans-serif;
+}
+
+@media screen and (min-width: 600px) {
+    th, td {
+       font-size: 30px;
+    }
+}
+
+th, td:hover {
+    color: orange;
+}
+
+table {
+    border-spacing: 15px;
+}
+
+html {
+    min-height: 100%;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color:  #91f2bb;
+    background-image: linear-gradient(#91f2bb, #18b25b)
+
+}
+
+img {
+    width: 90%;
+    height: auto;
 }
