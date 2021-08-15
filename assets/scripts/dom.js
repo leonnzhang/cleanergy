@@ -1,3 +1,5 @@
+// Besides the rushed and terrible code, I totally forgot to add form validation... please dont use non numbers in the forms...
+
 window.onload = () => {
     const modal = document.getElementById('resModal');
     const close = document.getElementById('modalClose');
