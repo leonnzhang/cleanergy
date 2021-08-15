@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Energy Production</title>
     <link rel="stylesheet" href="./assets/css/home.css">
     <script src="https://scheduler.distributed.computer/dcp-client/dcp-client.js"></script>
     <script src="./assets/scripts/dcp.js"></script>
@@ -14,9 +14,10 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
+    <!--NAV BAR-->
     <div class="navbar">
         <div class="nav-left">
-            <span class="nav-heading">Energy Utility</span>
+            <span class="nav-heading">Cleanergy</span>
         </div>
         <div class="nav-right">
             <a class="nav-link" href="#landing">Home</a>
@@ -24,63 +25,73 @@
             <a class="nav-link" href="#start">Get Started</a>
         </div>
     </div>
+    <!--LANDING-->
     <div class="landing" id="landing">
-        <span class="header">Welcome to Energy Production.</span>
-        <span class="subheader">Revolutionalizing a bunch of stuff</span>
+        <span class="header">Welcome to Cleanergy.</span>
+        <span class="subheader">An interactive energy demonstration.</span>
         <a class="qs" id="temp" href="#start">Get Started</a>
     </div>
+    <!--SETHACKS DEVPOST-->
     <div class="about" id="about">
+        <span class="about-header">
+            About Cleanergy
+        </span>
+        <span class="about-subheader">
+            A project for SET.Hacks() 2021, Persona 2, Climate Change.
+        </span>
         <div class="about-grid">
             <div data-aos="flip-up" class="about-card">
                 <span class="about-head">Inspiration</span>
                 <span class="about-text">
-                    We wanted to create an interactive and fun tool that allows people to see the difference between energy sources and experiment with changing various numbers to see the impact that will make on the final result. We also want to display the final result in a simple and visual way, so that an average user with no background knowledge could still see and understand the difference clearly.
+                    One of the main contributors to climate change is the carbon emissions released from burning fossil fuels to power our lives. In light of this, we wanted to create an interactive and fun tool that allows people to see the difference between energy sources and experiment with changing various numbers, allowing them to see the impact these changes have on the final result. We also wanted to display the final result in a simple and visual way, so that any average user with no background knowledge could still see and understand the difference clearly.
                 </span>
             </div>
 
             <div data-aos="flip-up" class="about-card">
-                <span class="about-head">What it does</span>
+                <span class="about-head">What it does and how we built it</span>
                 <span class="about-text">
-                    Once you press "get started" or scroll down, you will see our energy sources calculator. There, pick any energy source and enter your custom values to see how much that will cost, how much energy it generates, and the carbon emissions if applicable. We will also compare the cost, output and emissions to many real-world examples and provide an optimal energy source for your situation.
+                    Once you press get started or scroll down, you will see our energy sources calculator. There, pick any energy source and enter your custom values to see how much that will cost, how much energy it generates, and the carbon emissions if applicable. We will also compare the cost, output and emissions to many real-world examples.
+                    <br><br>We started with the broad concept of building an easy-to-use web application to display some information about climate change, and eventually refined it down to this idea. We built this web page mainly on HTML and CSS, using javascript to add interactivity. We researched various sources on the internet to get an accurate yet simple calculation for cost, energy production and carbon emissions of various energy resources. 
                 </span>
             </div>
 
             <div data-aos="flip-up" class="about-card">
-                <span class="about-head">How we built it and what we learned</span>
+                <span class="about-head">What we learned</span>
                 <span class="about-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at semper dui, vitae tristique eros. In vitae nibh rutrum, consequat lacus vitae, mattis velit. Aliquam sapien felis, viverra in viverra eget, sagittis a odio. Phasellus sagittis congue eleifend. Integer ac arcu efficitur tortor ultrices efficitur sed sit amet enim.
+                    At the beginning, we were experimenting with the DCP framework and learned how it functioned, and how to use it. When creating the front-end, we learned how to create responsive web design, and how to use cards in html. Additionally, since it was the first time two of us worked with HTML/CSS/JS, we learned many things about the basics of creating a website using these tools when developing a prototype for the front-end. With the research needed to create the calculations, we learned a great deal about how different energy sources function, and learned the basics of how to calculate their energy production. Finally, as it was the first hackathon for all of us, we learned how to manage time to create a project in a short amount of time. In the future, we will definitely be more efficient with our time and try to create something even better!
                 </span>
             </div>
 
             <div data-aos="flip-up" class="about-card">
                 <span class="about-head">Challenges we ran into</span>
                 <span class="about-text">
-                    During the process of creating this, we ran into issues with finding reliable data that is easy to work within code. We found various APIs regarding weather and energy, but they all turned out to be paid, too limited or too complex and unfeasible to implement in our timeframe. Eventually, we settled by researching the calculations for different energy sources and simplifying them to only a few inputs and outputs so that any user with no expertise in the field could use and understand our project.
+                    During the process of creating this, we ran into various issues involving the time constraints and lack of experience. In our 3-person team, only one of us had experience with HTML/CSS/JS and the rest of us only had experience in python. We could not come up with any full project that could make good use of our skills, so we struggled with having to learn things on the spot. We tried to include a complex genetic algorithm to find an optimal energy resource given certain parameters using the DCP framework, but that could not be implemented due to time constraints.
                 </span>
             </div>
 
             <div data-aos="flip-up" class="about-card">
                 <span class="about-head">Accomplishments that we're proud of</span>
                 <span class="about-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at semper dui, vitae tristique eros. In vitae nibh rutrum, consequat lacus vitae, mattis velit. Aliquam sapien felis, viverra in viverra eget, sagittis a odio. Phasellus sagittis congue eleifend. Integer ac arcu efficitur tortor ultrices efficitur sed sit amet enim.
+                    This was the first time any of us made a responsive design for a website, and it turned out really well. We also created a very visually appealing front-end, probably the best any of us have ever made in the past. Additionally, since two of us have very little experience with web-development, and this is the first hackathon any of us have participated in, we’re proud that we actually came up with an idea and created something with it.
                 </span>
             </div>
 
             <div data-aos="flip-up" class="about-card">
-                <span class="about-head">What's next for Energy Production</span>
+                <span class="about-head">What's next for Cleanergy</span>
                 <span class="about-text">
-                    Our goal for this project is to show average people with little knowledge on the subject how much of a difference clean energy can make. Hopefully, this will inspire them with enough interest to do further research on clean energy sources. By making people more aware of the problems regarding fossil fuels, there can be more people willing to make a difference by contributing to the development, distribution and implementation of clean energy.
+                    In the future, we would like to further develop and implement the feature where we calculate the optimal energy resources for a set of parameters. We believe that it would make our web application much more interactive and interesting for people. Furthermore, we want to add more visual aspects to the information that is returned. This will help users better understand the data, and will also be more visually appealing. Of course, we also need to fine tune the calculations that we use so that the results can be more precise. Since we used very simplified versions of the energy calculations, the results may not always be completely accurate.
                 </span>
             </div>
         </div>
     </div>
+    <!--CALCULATOR PROGRAM-->
     <div class="start" id="start">
 
         <div class="container">
-            <span class="start-header">Energy Production Calculator</span>
+            <span class="start-header">Cleanergy Calculator</span>
             <div class="start-grid">
 
-                <div data-aos="flip-left" class="start-card" >
+                <div data-aos="fade-up" class="start-card" >
                     <img class="start-image" src="./assets/images/coal.png" alt="">
                     <div class="start-text">
                         <span class="start-name">Coal</span>
@@ -88,9 +99,14 @@
                             Coal is a solid fossil fuel formed by plant matter decomposing under the proper conditions, which can be burnt for electrical energy.
                         </span>
                     </div>
+                    <div class="start-calc">
+                        <label for="coal-count">How much coal is burned everyday?</label>
+                        <input type="text" id="coal-count" placeholder="Coal in kilograms ie: 15">
+                        <button id="coalSubmit">Calculate</button>
+                    </div>
                 </div>
 
-                <div data-aos="flip-left" class="start-card" >
+                <div data-aos="fade-up" class="start-card" >
                     <img class="start-image" src="./assets/images/oil.png" alt="">
                     <div class="start-text">
                         <span class="start-name">Oil</span>
@@ -98,19 +114,33 @@
                             Oil is a liquid fossil fuel formed by tiny organic matter decomposing under the proper conditions, which can be burnt for electrical energy.
                         </span>
                     </div>
+                    <div class="start-calc">
+                        <label for="oil-count">How much oil is burned everyday?</label>
+                        <input type="text" id="oil-count" placeholder="Oil in liters ie: 10">
+                        <input type="radio" name="oil" id="crude">
+                        <label for="crude">Crude Oil</label>
+                        <input type="radio" name="oil" id="gasoline">
+                        <label for="gas">Gasoline</label>
+                        <button id="oilSubmit">Calculate</button>
+                    </div>
                 </div>
 
-                <div data-aos="flip-left" class="start-card" >
+                <div data-aos="fade-up" class="start-card" >
                     <img class="start-image" src="./assets/images/gas.png" alt="">
                     <div class="start-text">
-                        <span class="start-name">Gas</span>
+                        <span class="start-name">Natural Gas</span>
                         <span class="start-description">
                             Natural gas is a solid fossil fuel formed by microscopic organic matter decomposing under the proper conditions, which can be burnt for electrical energy.
                         </span>
                     </div>
+                    <div class="start-calc">
+                        <label for="gas-count">How much gas is burned everyday?</label>
+                        <input type="text" id="gas-count" placeholder="Gas in kg ie: 5">
+                        <button id="gasSubmit">Calculate</button>
+                    </div>
                 </div>
 
-                <div data-aos="flip-left" class="start-card" >
+                <div data-aos="fade-up" class="start-card" >
                     <img class="start-image" src="./assets/images/sun.png" alt="">
                     <div class="start-text">
                         <span class="start-name">Solar</span>
@@ -118,9 +148,18 @@
                             Solar energy is created by using photovoltaic cells in solar panels to convert direct sunlight to electrical energy.
                         </span>
                     </div>
+                    <div class="start-calc">
+                        <label for="solar-count">How many solar panels are there?</label>
+                        <input type="text" id="solar-count" placeholder="Panel count ie: 5">
+                        <label for="solar-wattage">What is the wattage of each solar panel? </label>
+                        <input type="text" id="solar-wattage" placeholder="Watts ie: 100">
+                        <label for="solar-hours">How many hours of sun is the solar panel exposed to per day?</label>
+                        <input type="text" id="solar-hours" placeholder="Hours ie: 8">
+                        <button id="solarSubmit">Calculate</button>
+                    </div>
                 </div>
 
-                <div data-aos="flip-left" class="start-card" >
+                <div data-aos="fade-up" class="start-card" >
                     <img class="start-image" src="./assets/images/wind.png" alt="">
                     <div class="start-text">
                         <span class="start-name">Wind</span>
@@ -128,9 +167,18 @@
                             Large turbines are installed in windy locations which spin and turn a generator which generates electrical energy.
                         </span>
                     </div>
+                    <div class="start-calc">
+                        <label for="wind-count">How many wind turbines are there?</label>
+                        <input type="text" id="wind-count" placeholder="Number ie: 5">
+                        <label for="wind-wattage">How long are the turbine blades?</label>
+                        <input type="text" id="wind-blades" placeholder="Length in meters ie: 50">
+                        <label for="wind-hours">What is the average wind speed in your area?</label>
+                        <input type="text" id="wind-speed" placeholder="Speed (km/s) ie: 15">
+                        <button id="windSubmit">Calculate</button>
+                    </div>
                 </div>
 
-                <div data-aos="flip-left" class="start-card" >
+                <div data-aos="fade-up" class="start-card" >
                     <img class="start-image" src="./assets/images/hydro.png" alt="">
                     <div class="start-text">
                         <span class="start-name">Hydro</span>
@@ -138,78 +186,45 @@
                             Turbines are installed in areas with waterflow like dams or rivers that spin and turn a generator to create electrical energy.
                         </span>
                     </div>
+                    <div class="start-calc">
+                        <label for="hydro-count">What is the mass flow rate of the water?</label>
+                        <input type="text" id="hydro-count" placeholder="Flow rate in kg/s ie: 5">
+                        <label for="hydro-wattage">What is the length/height of the dam head?</label>
+                        <input type="text" id="hydro-length" placeholder="Size in meters ie: 10">
+                        <label for="hydro-hours">What is the % efficiency of the dam?</label>
+                        <input type="text" id="hydro-eff" placeholder="0-100">
+                        <button id="hydroSubmit">Calculate</button>
+                    </div>
                 </div>
 
             </div>
         </div>
+    </div>
+    
+    <!--RESULTS MODAL-->
+    <div id="resModal" class="modal">
+        <div class="modal-content">
+            <span id="modalClose" class="close">&times;</span>
+            <p class="modal-text">Results!</p>
+            <p class="modal-text" id="modal-cost">This will cost $ DEFAULT</p>
 
-<!--
-        <h1>
-            Energy Production Calculator
-        </h1>
-        <div style="overflow-x:auto">
-            <table class="prod-table">
-                <tr>
-                    <td>
-                        <img class="e-prod" src="assets\images\coal.png">
-                        <br>
-                        Coal
-                    </td>
-                    <td>
-                        <img class="e-prod" src="assets\images\oil.png">
-                        <br>
-                        Oil
-                    </td>
-                    <td>
-                        <img class="e-prod" src="assets\images\gas.png">
-                        <br>
-                        Natural Gas
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img class="e-prod" src="assets\images\sun.png">
-                        <br>
-                        Solar
-                    </td>
-                    <td>
-                        <img class="e-prod" src="assets\images\wind.png">
-                        <br>
-                        Wind                
-                    </td>
-                    <td>
-                        <img class="e-prod" src="assets\images\hydro.png">
-                        <br>
-                        Hydro            
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img class="e-prod" src="assets\images\geothermal.png">
-                        <br>
-                        Geothermal
-                    </td>
-                    <td>
-                        <img class="e-prod" src="assets\images\biomass.png">
-                        <br>
-                        Biomass                
-                    </td>
-                    <td>
-                        <img class="e-prod" src="assets\images\nuclear.png">
-                        <br>
-                        Nuclear            
-                    </td>
-                </tr>
-            </table>
-        </div>-->
+            <p class="modal-text" id="modal-energy"><br>This will generate DEFAULT</p>
+            <p class="modal-text" id="modal-fact1">This will be enough energy to run a TV for __234 hours.</p>
+            <p class="modal-text" id="modal-fact2">This will be enough energy to run a household for __3000 days.</p>
+
+            <p class="modal-text" id="modal-emissions"><br>This will emit DEFAULT</p>
+            <p class="modal-text" id="modal-fact3">This will emit as much carbon dioxide per day as driving for __4.6 kilometers.</p>
+            <p class="modal-text" id="modal-fact4">This will take __0.06 trees to offset the daily emissions.</p>
+        </div>
     </div>
 
+    <!--FOOTER-->
     <div class="footer">
         <span class="footer-branding">
-            Energy Utility
+            Cleanergy Calculator
         </span>
         <span class="footer-credits">
-            Designed and Developed by the boys for Set.Hacks() 2021.
+            Leon Zhang, Jeffery Qiu, Tony Liu || SET.Hacks() 2021.
         </span>
         <div class="github">
             <a class="footer-github" target="_blank" href="https://github.com/leonnzhang/fancyweather">
@@ -218,8 +233,6 @@
         </div>
     </div>
 
-    <script>
-        AOS.init();
-    </script>
+    <script>AOS.init();</script>
 </body>
 </html>

@@ -85,14 +85,24 @@
     width: 75%;
     /*height: 80vh;*/
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: white;
 
-    padding-top: 150px;
+    padding-top: 125px;
     /*margin-top: 200px;*/
     margin-bottom: 150px;
     margin-left: auto;
     margin-right: auto;
+}
+.about-header {
+    font-size: 22px;
+    margin-bottom: 6px;
+    color: #18b25b;
+}
+.about-subheader {
+    font-size: 16px;
+    margin-bottom: 65px;
+    color: black;
 }
 .about-grid {
     display: grid;
@@ -175,6 +185,12 @@
     margin: 0px 20px 10px 20px;
     text-align: center;
 }
+.start-calc > * {
+    display: flex;
+    align-items: center;
+    
+    margin: 10px;
+}
 
 .footer {
     padding-top: 20px;
@@ -197,13 +213,13 @@
     margin: auto;
 }
 .footer-github {
-    margin-left: auto;
+    margin: auto;
     padding-left: 0;
 }
 .icon {
     width: 25px;
 }
-
+/* viewport < 1300px */
 @media only screen and (max-width: 1300px) {
     .nav-right {
         display: none;
@@ -221,9 +237,40 @@
     .start-grid {
         grid-template-columns: 100%;
     }
+    .modal-content {
+        width: 80% !important;
+    }
 }
 
-
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10000; /* sit on top of navbar 9999*/
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4)
+}
+.modal-content {
+    margin: 15% auto auto auto;
+    padding: 20px;
+    border: 2px solid #18b25b;
+    width: 25%;
+    background-color: white;
+    border-radius: 8px;
+}
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.modal-text {
+    margin: 5px;
+}
 
 
 /* i wrote this, and i hated it, but i dont wanna delete it, so it's here.

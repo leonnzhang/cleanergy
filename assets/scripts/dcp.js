@@ -1,7 +1,7 @@
 const compute = dcp.compute;
 
 // broken event listener bc no go button
-/* DONT USE ONLOAD HERE THERE IS AN ONLOAD IN DOM.JS!! NEVERMIND NOT YET
+/* DONT USE WINDOW ONLOAD HERE THERE IS AN ONLOAD IN DOM.JS!!
 window.onload = () => {
     document.getElementById('temp').onclick = () => {
         worker();
@@ -15,7 +15,7 @@ function upperCaseFunction(letter) {
     return letter.toUpperCase();
 }
 
-function workFunction() {
+function workFunction(param) {
     progress();
     return "does something";
 }
