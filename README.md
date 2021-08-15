@@ -1,5 +1,4 @@
 This project was made for SET.Hacks() 2021 and was developed by **[@leonnzhang](https://github.com/leonnzhang)**, **[@ToonyLoo](https://github.com/Toonyloo)** and **[@Grogles](https://github.com/Grogles)**.
-
 This project addresses Persona #2: Joe that deals with the issue of climate change.
 
 
